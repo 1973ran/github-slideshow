@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+<article class="post-page">
+
+  <!-- Post Hero -->
+  <div class="post-hero">
+    <div class="container">
+      <div class="post-breadcrumb">
+        <a href="{{ '/' | relative_url }}">בית</a>
+        <i class="fas fa-chevron-left"></i>
+        <a href="{{ '/#blog' | relative_url }}">בלוג</a>
+        <i class="fas fa-chevron-left"></i>
+        <span>{{ page.title }}</span>
+      </div>
+      <div class="post-meta">
+        <span class="post-category">{{ page.category | default: 'פנסיה וביטוח' }}</span>
+        <span class="post-date"><i class="fas fa-calendar-alt"></i>&nbsp;{{ page.date | date: "%d.%m.%Y" }}</span>
+        <span class="post-read-time"><i class="fas fa-clock"></i>&nbsp;{{ page.content | number_of_words | divided_by: 150 | plus: 1 }} דקות קריאה</span>
+      </div>
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.description %}<p class="post-excerpt">{{ page.description }}</p>{% endif %}
+    </div>
+  </div>
+
+  <!-- Post Body -->
+  <div class="container post-body">
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-card sidebar-cta">
+        <div class="sidebar-icon"><i class="fas fa-comments"></i></div>
+        <h3>רוצה לדעת יותר?</h3>
+        <p>ייעוץ ראשוני אישי ומקצועי ללא עלות וללא התחייבות</p>
+        <a href="{{ '/#contact' | relative_url }}" class="btn btn-accent btn-full">לייעוץ חינם</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>מאמרים נוספים</h3>
+        <ul class="related-posts">
+          {% for post in site.posts limit:5 %}
+            {% unless post.url == page.url %}
+            <li>
+              <i class="fas fa-arrow-left"></i>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </li>
+            {% endunless %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="sidebar-card sidebar-share">
+        <h3>שתף מאמר זה</h3>
+        <div class="share-buttons">
+          <a href="https://wa.me/?text={{ page.title | url_encode }}%20{{ page.url | absolute_url | url_encode }}" target="_blank" aria-label="שתף בוואטסאפ" class="share-btn whatsapp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url | url_encode }}" target="_blank" aria-label="שתף בפייסבוק" class="share-btn facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}" target="_blank" aria-label="שתף בלינקדאין" class="share-btn linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+</article>

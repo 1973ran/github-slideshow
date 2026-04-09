@@ -16,10 +16,9 @@ kramdown:
 plugins:
   - jemoji
 
-## personalize your slide show
-title:      Ran Messika
-author:     Ran Messika
-description: Ran Messika - Personal Site
+title:       רן משיקה – פנסיה וביטוח
+author:      Ran Messika
+description: ייעוץ פנסיוני וביטוחי מקצועי ואישי – קרן פנסיה, ביטוח מנהלים, ביטוח חיים ותכנון פרישה
 
 sass:
   style:     :compressed

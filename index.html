@@ -1,13 +1,260 @@
 ---
-layout: presentation
+layout: default
+title: רן משיקה – ייעוץ פנסיוני וביטוחי
+description: ייעוץ פנסיוני וביטוחי מקצועי ואישי – קרן פנסיה, ביטוח מנהלים, ביטוח חיים ותכנון פרישה
 ---
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<!-- ===================================================
+     HERO
+     =================================================== -->
+<section class="hero">
+  <div class="container hero-inner">
+
+    <div class="hero-content">
+      <span class="hero-badge">ייעוץ מקצועי ובלתי תלוי</span>
+      <h1>הבטח את<br><span>העתיד הכלכלי</span><br>שלך היום</h1>
+      <p>ייעוץ פנסיוני וביטוחי אישי ומקצועי, מותאם בדיוק לצרכים שלך. אני כאן כדי לוודא שאתה ומשפחתך מוגנים בכל שלב בחיים.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-accent btn-lg">לייעוץ חינם &#8594;</a>
+        <a href="#services" class="btn btn-outline btn-lg">השירותים שלי</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="hero-card-icon">
+        <i class="fas fa-shield-halved"></i>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">שנות ניסיון</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">500+</span>
+          <span class="stat-label">לקוחות מרוצים</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">שקיפות מלאה</span>
+        </div>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-note">
+        <i class="fas fa-check-circle"></i>
+        ייעוץ ראשוני ללא עלות וללא התחייבות
+      </div>
+    </div>
+
+  </div>
+  <div class="hero-scroll"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+
+<!-- ===================================================
+     SERVICES
+     =================================================== -->
+<section id="services" class="section services-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">מה אני מציע</span>
+      <h2>השירותים שלי</h2>
+      <p>פתרונות פנסיוניים וביטוחיים מותאמים אישית, עם מחויבות מלאה לטובת הלקוח</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-piggy-bank"></i></div>
+        <h3>קרן פנסיה</h3>
+        <p>בחירה, ניהול ואופטימיזציה של קרן פנסיה שמתאימה לך – עם מסלול השקעה, כיסויים ביטוחיים ועמלות שנכונים לצרכיך.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>ביטוח מנהלים</h3>
+        <p>ביטוח מנהלים עם יתרונות מס ותנאים מותאמים אישית – פתרון מצוין לשכירים בעלי שכר גבוה ולעצמאיים.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-heart-pulse"></i></div>
+        <h3>ביטוח חיים</h3>
+        <p>הגנה פיננסית לאנשים הכי חשובים לך – ביטוח חיים שמספק רשת ביטחון למשפחה בכל תרחיש.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-user-shield"></i></div>
+        <h3>אובדן כושר עבודה</h3>
+        <p>ביטוח שמגן על ההכנסה שלך כשאינך מסוגל לעבוד עקב מחלה, פציעה או תאונה – הכנסה חלופית ברגע הנכון.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>תכנון פרישה</h3>
+        <p>תכנון כולל לפרישה בכבוד – חישוב צפי קצבה, מועד פרישה אופטימלי, מיסוי ואסטרטגיית משיכה נכונה.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-home"></i></div>
+        <h3>ביטוח משכנתא</h3>
+        <p>ביטוח חיים וביטוח מבנה למשכנתא – הגנה על ההשקעה הגדולה בחיים שלך ועל הדירה שבנית.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     WHY ME
+     =================================================== -->
+<section class="section why-section">
+  <div class="container why-inner">
+
+    <div class="why-visual">
+      <div class="why-visual-icon">
+        <i class="fas fa-award"></i>
+      </div>
+      <h3>יועץ פנסיוני מוסמך ובלתי תלוי</h3>
+      <p>בעל רישיון ייעוץ פנסיוני מרשות שוק ההון, ביטוח וחיסכון. ייעוץ ללא ניגוד אינטרסים ועם שקיפות מלאה.</p>
+      <div class="license-badge">
+        <i class="fas fa-certificate"></i>
+        מורשה ייעוץ פנסיוני – רשות שוק ההון
+      </div>
+    </div>
+
+    <div class="why-content">
+      <span class="section-tag">למה לבחור בי</span>
+      <h2>ייעוץ שמעמיד אותך במרכז</h2>
+      <p>אני יועץ פנסיוני בלתי תלוי – מה שאומר שאני עובד בשבילך ולא בשביל חברות הביטוח. המטרה שלי היא תמיד לקדם את האינטרס שלך.</p>
+      <ul class="why-list">
+        <li><i class="fas fa-check-circle"></i> ייעוץ בלתי תלוי ואובייקטיבי לחלוטין</li>
+        <li><i class="fas fa-check-circle"></i> ניסיון של מעל 15 שנה בתחום הפנסיוני</li>
+        <li><i class="fas fa-check-circle"></i> זמינות מלאה ומענה אישי ומהיר</li>
+        <li><i class="fas fa-check-circle"></i> שקיפות בכל עמלה, מסלול והמלצה</li>
+        <li><i class="fas fa-check-circle"></i> ייעוץ ראשוני ללא עלות ללא התחייבות</li>
+        <li><i class="fas fa-check-circle"></i> מעקב שוטף ועדכון תנאים לאורך הדרך</li>
+      </ul>
+      <a href="#contact" class="btn btn-accent">בואו נדבר &#8594;</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================================================
+     BLOG
+     =================================================== -->
+<section id="blog" class="section blog-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">ידע הוא כוח</span>
+      <h2>הבלוג שלי</h2>
+      <p>מאמרים מקצועיים על פנסיה, ביטוח וניהול כלכלי נכון – כי לקוח מודע הוא לקוח מוגן</p>
+    </div>
+
+    <div class="blog-grid">
+      {% for post in site.posts limit:6 %}
+      <article class="blog-card">
+        <div class="blog-card-header">
+          <span class="blog-tag">{{ post.category | default: 'פנסיה וביטוח' }}</span>
+          <span class="blog-date">{{ post.date | date: "%d.%m.%Y" }}</span>
+        </div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}</p>
+        <a href="{{ post.url | relative_url }}" class="read-more">קרא עוד <i class="fas fa-arrow-left"></i></a>
+      </article>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================================================
+     CONTACT
+     =================================================== -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="section-header light">
+      <span class="section-tag">בואו נדבר</span>
+      <h2>צור קשר</h2>
+      <p>השאר פרטים ואחזור אליך בהקדם לייעוץ ראשוני ללא עלות וללא התחייבות</p>
+    </div>
+
+    <div class="contact-inner">
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">שם מלא *</label>
+            <input type="text" id="name" name="name" placeholder="ישראל ישראלי" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">טלפון *</label>
+            <input type="tel" id="phone" name="phone" placeholder="050-0000000" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">דואר אלקטרוני</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="subject">במה אוכל לעזור?</label>
+          <select id="subject" name="subject">
+            <option value="">בחר נושא...</option>
+            <option value="pension">קרן פנסיה</option>
+            <option value="managers">ביטוח מנהלים</option>
+            <option value="life">ביטוח חיים</option>
+            <option value="disability">אובדן כושר עבודה</option>
+            <option value="retirement">תכנון פרישה</option>
+            <option value="mortgage">ביטוח משכנתא</option>
+            <option value="other">אחר</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">הודעה</label>
+          <textarea id="message" name="message" rows="4" placeholder="ספר לי במה אוכל לעזור לך..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-accent btn-full btn-lg">שלח הודעה &#8594;</button>
+      </form>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>טלפון</h4>
+            <a href="tel:+972500000000">050-0000000</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>דואר אלקטרוני</h4>
+            <a href="mailto:ran@ranmessika.com">ran@ranmessika.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <h4>וואטסאפ</h4>
+            <a href="https://wa.me/972500000000">שלח הודעה עכשיו</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>שעות פעילות</h4>
+            <p>ראשון – חמישי: 09:00 – 18:00</p>
+          </div>
+        </div>
+        <div class="contact-social">
+          <h4>עקוב אחריי</h4>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
