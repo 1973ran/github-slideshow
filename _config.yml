@@ -17,9 +17,9 @@ plugins:
   - jemoji
 
 ## personalize your slide show
-title:       github-slideshow
-author:      GitHubTeacher
-description: A fun activity for learning Git and GitHub.
+title:      Ran Messika
+author:     Ran Messika
+description: Ran Messika - Personal Site
 
 sass:
   style:     :compressed
@@ -79,7 +79,7 @@ reveal:
   ## Opens links in an iframe preview overlay
   #previewLinks: false
   ## Transition style (default/cube/page/concave/zoom/linear/fade/none)
-  transition: linear
+  transition: zoom
   ## Transition speed (default/fast/slow)
   #transitionSpeed: default
   ## Transition style for full page slide backgrounds (default/none/slide/concave/convex/zoom)
