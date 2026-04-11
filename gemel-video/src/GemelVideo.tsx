@@ -1,5 +1,6 @@
 import {
   AbsoluteFill,
+  Audio,
   Sequence,
   interpolate,
   spring,
@@ -447,6 +448,18 @@ const SceneCTA: React.FC = () => {
 export const GemelVideo: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: BG_DARK }}>
+      {/* Background music */}
+      <Audio
+        src={staticFile("music.mp3")}
+        volume={(f) =>
+          interpolate(f, [0, 30, 1770, 1800], [0, 0.35, 0.35, 0], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+          })
+        }
+        loop
+      />
+
       {/* Scene 1: Hook — 0:00–0:12 */}
       <Sequence from={0} durationInFrames={360} premountFor={30}>
         <SceneHook />
