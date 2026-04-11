@@ -1,0 +1,18 @@
+{
+  "name": "gemel-video",
+  "version": "1.0.0",
+  "description": "קופת גמל להשקעה - סרטון הסבר",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render GemelVideo out/gemel-video.mp4"
+  },
+  "dependencies": {
+    "remotion": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
