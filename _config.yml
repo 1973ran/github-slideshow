@@ -101,9 +101,13 @@ reveal:
   maxScale: 1.5
 
 exclude: [
+
   "Gemfile",
   "Gemfile.lock",
-  "vendor",
+  "vendor",  "node_modules",
+  "package.json",
+  "package-lock.json",
+
   "reveal.js/test",
   "reveal.js/index.html",
   "reveal.js/README.md",
